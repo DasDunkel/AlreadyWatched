@@ -11,7 +11,7 @@
  *  3 - Video is now marked as not interested.
  *
  */
-console.log("%cLoaded service worker for Not Interested!", "font-weight: bold; font-size: 18px;")
+console.log("%cLoaded service worker for AlreadyWatched", "font-weight: bold; font-size: 18px;")
 let MOUSE_X, MOUSE_Y;
 
 /**
@@ -106,6 +106,43 @@ async function markVideoAsNotInterested() {
             if (targetButton)
                 targetButton.click();
         }, 10);
+
+        setTimeout(() => {
+            console.log("Marked, trying to tell why");
+            // Open the Iron dropdown container by clicking the hamburger button
+            const tellBtns = videoThumbnail.getElementsByTagName("button");
+            for (let tellBtn of tellBtns) {
+                if (tellBtn.innerHTML.toLocaleUpperCase().includes("TELL US WHY")){
+                    console.log("Clicking \"Tell us why\"");
+                    tellBtn.click();
+                }
+            }
+        }, 10);
+
+        setTimeout(() => {
+            console.log("Telling Why, trying to say I already watched");
+            // Open the Iron dropdown container by clicking the hamburger button
+            const dismissBtns = document.getElementsByTagName("yt-formatted-string");
+            for (let dismissBtn of dismissBtns) {
+                if (dismissBtn.innerHTML.toLocaleUpperCase().includes("I'VE ALREADY WATCHED THE VIDEO")){
+                    console.log("Clicking \"Already Watched\"");
+                    dismissBtn.click();
+                }
+            }
+        }, 250);
+
+        setTimeout(() => {
+            console.log("Trying to submit");
+            // Open the Iron dropdown container by clicking the hamburger button
+            const submitBtns = document.getElementsByTagName("button");
+            for (let submitBtn of submitBtns) {
+                if (submitBtn.innerHTML.toLocaleUpperCase().includes("SUBMIT")){
+                    console.log("Clicking \"Submit\"");
+                    submitBtn.click();
+                }
+            }
+        }, 250);
+        
     }
 }
 

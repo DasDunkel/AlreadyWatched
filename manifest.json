@@ -19,8 +19,7 @@
          }
       }
    },
-   "description": "Single-button resolution to quickly mark YouTube videos and playlists as not interested.",
-   "differential_fingerprint": "1.466777722cc19c93ef67fa768e08eb54c0ad70c35d53c09db1cbc68cf8e5f7f7",
+   "description": "Single-button to quickly mark YouTube videos Already Watched",
    "host_permissions": [ "*://*.youtube.com/*" ],
    "icons": {
       "128": "/images/NotInterestedV3_128.png",
@@ -30,8 +29,8 @@
    },
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlWPGAubZpIW9ptkZo8KHVWVzN1uCxaQ45NVf6O2Uror/XQSbaDkX5Ywtd/Jv0UEm7KI0l/G2WdQrc0SsRjjgG5fcl2N1hUe4lI/pCKeTRKqSGffg0phKqeNvvp/ZCauV8rOhn+NSBDDugRV4YIbpUoQ/hza1wMqpw9oI1JbvyEKS/KeJ5vlhzvs+kQQXabaNADrM1WrciwJPbFXPYtvcWpbMBpo4mi+rzptGG5GbFDXcHopvd+nvvxx5tlHTGeBRx/gaMSknDa7/D3uSJkP6FF2jUfXauBxCtOIsCg3gVjdq8ehFe3QVz8cL4935Dq9nWpxkRDDaTIA0tuRLhXKJkwIDAQAB",
    "manifest_version": 3,
-   "name": "Not Interested!",
+   "name": "AlreadyWatched",
    "permissions": [ "activeTab", "scripting" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "2.2"
+   "version": "1.0"
 }
