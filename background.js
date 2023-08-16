@@ -1,14 +1,14 @@
 /**
- * Not Interested!
+ * Already Watched
  * Version 1.0
- * Created: 26/06/2021
- * Last Update: 15/06/2023
+ * Created: 8/15/2023
+ * Last Update: 8/16/2023
  *
- * A V8 Engine (Chrome) extension that allows you to easily mark videos as Not Interested.
+ * A V8 Engine (Chrome) extension that allows you to easily mark videos as Already Watched.
  * Intended design is:
  *  1 - Hover mouse over video thumbnail.
  *  2 - Press hotkey.
- *  3 - Video is now marked as not interested.
+ *  3 - Video is now marked as already watched.
  *
  */
 console.log("%cLoaded service worker for AlreadyWatched", "font-weight: bold; font-size: 18px;")
