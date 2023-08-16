@@ -135,7 +135,7 @@ async function markVideoAsNotInterested() {
                     submitBtn.click();
                 }
             }
-        }, 10);
+        }, 250);
         
     }
 }
