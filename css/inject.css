@@ -35,17 +35,17 @@
 
 #details:hover::before {
     opacity: 1;
-    border-image-source: linear-gradient(335deg, #ff0d0085, #FF0B0011, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
+    border-image-source: linear-gradient(335deg, #088af5d0, #FF0B0011, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
 }
 
 #details:hover::after {
     position: absolute;
     /* background: var(--not-interested-text-background-color); */
-    content: 'Not Interested? ' var(--not-interested-hotkey);
+    content: 'Already Watched? ' var(--not-interested-hotkey);
     bottom: 5px;
     right: calc(var(--not-interested-gradient-border-width) * 2 + 5px);
     padding: 2px;
-    color: #959595;
+    color: #2bf8b4;
     mix-blend-mode: difference;
 }
 
