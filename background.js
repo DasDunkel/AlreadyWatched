@@ -115,17 +115,20 @@ async function markVideoAsNotInterested() {
                     tellBtn.click();
                 }
             }
-        }, 10);
+        }, 20);
 
         // click the "I've Already Watched" button
         setTimeout(() => {
-            const dismissBtns = document.getElementsByTagName("yt-formatted-string");
-            for (let dismissBtn of dismissBtns) {
-                if (dismissBtn.innerHTML.toLocaleUpperCase().includes("I'VE ALREADY WATCHED THE VIDEO")){
-                    dismissBtn.click();
+            const dismissPopups = document.getElementsByTagName("ytd-dismissal-follow-up-renderer");
+            for (let dismissPopup of dismissPopups) {
+                const dismissBtns = dismissPopup.getElementsByTagName("yt-formatted-string");
+                for (let dismissBtn of dismissBtns) {
+                    if (dismissBtn.innerHTML.toLocaleUpperCase().includes("I'VE ALREADY WATCHED THE VIDEO")){
+                        dismissBtn.click();
+                    }
                 }
             }
-        }, 250);
+        }, 200);
 
         // Click the "submit" button
         setTimeout(() => {
@@ -135,7 +138,7 @@ async function markVideoAsNotInterested() {
                     submitBtn.click();
                 }
             }
-        }, 250);
+        }, 220);
         
     }
 }
