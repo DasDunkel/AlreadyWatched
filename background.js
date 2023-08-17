@@ -107,8 +107,8 @@ async function markVideoAsNotInterested() {
                 targetButton.click();
         }, 10);
 
+        // click the "Tell us why" button
         setTimeout(() => {
-            // Open the Iron dropdown container by clicking the hamburger button
             const tellBtns = videoThumbnail.getElementsByTagName("button");
             for (let tellBtn of tellBtns) {
                 if (tellBtn.innerHTML.toLocaleUpperCase().includes("TELL US WHY")){
@@ -117,8 +117,8 @@ async function markVideoAsNotInterested() {
             }
         }, 10);
 
+        // click the "I've Already Watched" button
         setTimeout(() => {
-            // Open the Iron dropdown container by clicking the hamburger button
             const dismissBtns = document.getElementsByTagName("yt-formatted-string");
             for (let dismissBtn of dismissBtns) {
                 if (dismissBtn.innerHTML.toLocaleUpperCase().includes("I'VE ALREADY WATCHED THE VIDEO")){
@@ -127,8 +127,8 @@ async function markVideoAsNotInterested() {
             }
         }, 250);
 
+        // Click the "submit" button
         setTimeout(() => {
-            // Open the Iron dropdown container by clicking the hamburger button
             const submitBtns = document.getElementsByTagName("button");
             for (let submitBtn of submitBtns) {
                 if (submitBtn.innerHTML.toLocaleUpperCase().includes("SUBMIT")){
