@@ -2,6 +2,10 @@
 
 A Google Chrome extension that allows users to mark a YouTube video as already watched in a single keybind, instead of 5 clicks.
 
+Just hover over the video's title and press the keybind (Alt + Q by default)
+This keybind can be changed by going to chrome://extensions/shortcuts
+
+
 
 # Issues
 
