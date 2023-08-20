@@ -167,22 +167,26 @@ const onLaunch = async () => {
     if(!validTab) {
         console.warn("No valid tab found.")
         return;
+    } else if (!validTab.url?.startsWith("https://www.youtube.com")) {
+        //console.warn("Crome tab is not valid for style injection");
+        return;
     }
+    console.log("Found YouTube tab")
     injectStyles(validTab)
 }
 
 const onUpdated = () => {
-    console.log("Updated")
+    //console.log("Updated")
     onLaunch()
 }
 
 const onActivated = () => {
-    console.log("Activated")
+    //console.log("Activated")
     onLaunch()
 }
 
 const onCreated = () => {
-    console.log("Created")
+    //console.log("Created")
     onLaunch()
 }
 
