@@ -128,7 +128,7 @@ async function markVideoAsNotInterested() {
                     }
                 }
             }
-        }, 200);
+        }, 300);
 
         // Click the "submit" button
         setTimeout(() => {
@@ -138,7 +138,7 @@ async function markVideoAsNotInterested() {
                     submitBtn.click();
                 }
             }
-        }, 220);
+        }, 350);
         
     }
 }
