@@ -123,7 +123,7 @@ async function markVideoAsNotInterested() {
             for (let dismissPopup of dismissPopups) {
                 const dismissBtns = dismissPopup.getElementsByTagName("yt-formatted-string");
                 for (let dismissBtn of dismissBtns) {
-                    if (dismissBtn.innerHTML.toLocaleUpperCase().includes("I'VE ALREADY WATCHED THE VIDEO")){
+                    if (dismissBtn.innerHTML.toLocaleUpperCase().includes("ALREADY WATCHED")){
                         dismissBtn.click();
                     }
                 }
