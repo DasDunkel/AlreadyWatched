@@ -27,7 +27,6 @@
       "32": "/images/NotInterestedV3_32.png",
       "48": "/images/NotInterestedV3_48.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlWPGAubZpIW9ptkZo8KHVWVzN1uCxaQ45NVf6O2Uror/XQSbaDkX5Ywtd/Jv0UEm7KI0l/G2WdQrc0SsRjjgG5fcl2N1hUe4lI/pCKeTRKqSGffg0phKqeNvvp/ZCauV8rOhn+NSBDDugRV4YIbpUoQ/hza1wMqpw9oI1JbvyEKS/KeJ5vlhzvs+kQQXabaNADrM1WrciwJPbFXPYtvcWpbMBpo4mi+rzptGG5GbFDXcHopvd+nvvxx5tlHTGeBRx/gaMSknDa7/D3uSJkP6FF2jUfXauBxCtOIsCg3gVjdq8ehFe3QVz8cL4935Dq9nWpxkRDDaTIA0tuRLhXKJkwIDAQAB",
    "manifest_version": 3,
    "name": "AlreadyWatched",
    "permissions": [ "activeTab", "scripting" ],
